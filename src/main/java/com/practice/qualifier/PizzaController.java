@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PizzaController {
 
-    private Pizza pizza;
+    private final Pizza pizza;
 
     @Autowired
     public PizzaController(@Qualifier("nonVegPizza") Pizza pizza) {
