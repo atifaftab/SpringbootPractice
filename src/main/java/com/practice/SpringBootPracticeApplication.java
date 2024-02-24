@@ -5,11 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootPracticeApplication {
+public class SpringBootPracticeApplication {
 
     public static void main(String[] args) {
 
-        var context = SpringApplication.run(SpringbootPracticeApplication.class, args);
+        var context = SpringApplication.run(SpringBootPracticeApplication.class, args);
         PizzaController pizzaController = (PizzaController) context.getBean("pizzaController");
         System.out.println(pizzaController.getPizza());
 
