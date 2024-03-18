@@ -10,7 +10,7 @@ public class PizzasController {
     @Value("${server.port}")
     private String serverPort;
 
-//    @GetMapping
+    @GetMapping
     public void get() {
         System.out.println("server : "+serverPort);
     }
